@@ -1,0 +1,39 @@
+.header {
+    grid-column: 1/-1;
+    padding: 1.5rem;
+
+
+    display: grid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: min-content minmax(40rem 1fr) min-content;
+
+
+
+    &__logo {
+        grid-column: 1/2;
+
+    }
+   
+    
+
+    &__socials {
+        grid-column: 3/4;
+        display: flex;
+
+        svg {
+            width: 3rem;
+            height: 3rem;
+            @media only screen and  (max-width: $bp-smallF) {
+                width: 2rem;
+                height: 2rem;   
+            }
+            &:not(:last-child){
+                margin-right: 2rem;
+                     
+            }
+        }
+    }
+
+}

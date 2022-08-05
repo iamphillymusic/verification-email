@@ -1,0 +1,39 @@
+.footer{
+    display: grid;
+    grid-column: 1/-1;
+    grid-row: 9/-1;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: .8rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, minmax(min-content, min-content));
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    
+
+
+    &__thanks{
+        grid-column: 1/-1;
+    }
+
+    &__team{
+        grid-column: 1/-1;
+        margin-bottom: 3rem;
+
+    }
+
+    &__email{
+        grid-column: 1/-1;
+        margin-bottom: 1rem;
+
+
+    }
+
+    &__str{
+        grid-column: 1/-1;
+
+    }
+    &__copy{
+        grid-column: 1/-1;
+
+    }
+}

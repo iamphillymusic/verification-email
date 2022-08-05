@@ -1,0 +1,125 @@
+$color-primary: #c69963;
+$color-primary-light: #828451;
+$color-primary-dark: #525335;
+
+//BP FOR FONT 
+$bp-largestF: 43.75em; // 930px//
+$bp-largeF: 30.6em; // 930px//
+$bp-mediumF: 25em; // 930px//
+$bp-smallF: 24.3em; // 930px//
+
+
+
+
+
+
+//BP FOR RESIZING
+
+$bp-exlargest: 75.12em; // 930px//
+
+$bp-largest: 58.12em; // 930px//
+$bp-large: 56.25em; // 920px//
+$bp-medium: 45.6em; // 730px//
+$bp-small1: 36.62em; // 730px//
+
+$bp-small: 37.5em; // 730px//
+$bp-smallest: 33.7em; // 730px//
+$bp-exsmallest: 29.3em; // 730px//
+
+
+
+
+
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+box-sizing: border-box;
+font-size: 62.5%;
+
+
+
+@media only screen and  (max-width: $bp-largeF) {
+    font-size: 55%;
+}
+
+@media only screen and  (max-width: $bp-mediumF) {
+    font-size: 50%;
+}
+
+
+
+
+}
+
+body {
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+
+.container {
+    background-color: #d5d5cd;
+    p{ color: rgb(94, 91, 91)}
+
+
+
+ 
+}
+
+.content {
+    width: 45vw;
+    height: 80rem;
+
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(10vw, 1fr));
+    grid-template-rows: repeat(3, min-content);
+    padding: 1.2rem;
+
+    @media only screen and  (max-width: $bp-exlargest) {
+        width: 55vw;
+    }
+    @media only screen and  (max-width: $bp-largest) {
+        width: 60vw;
+        height: 95rem;
+
+    }
+
+    @media only screen and  (max-width: $bp-large) {
+        width: 70vw;
+        height: 95rem;
+
+    }
+    @media only screen and  (max-width: $bp-medium) {
+        width: 80vw;
+    }
+    @media only screen and  (max-width: $bp-small1) {
+        width: 85vw;
+    }
+
+
+    @media only screen and  (max-width: $bp-smallest) {
+        width: 90vw;
+
+    }
+
+    @media only screen and  (max-width: $bp-exsmallest) {
+        width: 100vw;
+        height: 95rem;
+
+    }
+
+
+    
+}
