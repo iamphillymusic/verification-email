@@ -31,6 +31,9 @@
             }
             &:not(:last-child){
                 margin-right: 2rem;
+                @media only screen and  (max-width: $bp-smallF) {
+                    margin-right: .7rem;
+                }
                      
             }
         }
