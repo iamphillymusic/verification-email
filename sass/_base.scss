@@ -3,11 +3,33 @@ $color-primary-light: #828451;
 $color-primary-dark: #525335;
 
 //BP FOR FONT 
+
+$bp-largestE: 82.2em; // 1300px//
+
+$bp-largeE: 40.6em; // 620px//
+$bp-mediumE: 35em; // 560px//
+$bp-smallE: 26.12em; // 418px//
+$bp-smallerE: 23.12em; // 418px//
+
+
+
+
+
+
 $bp-largestF: 43.75em; // 930px//
 $bp-largeF: 30.6em; // 930px//
 $bp-mediumF: 25em; // 930px//
 $bp-smallF: 24.4em; // 388px//
 $bp-smallestF: 20.6em; // 388px//
+$bp-smallestR: 26.25em; // 420px//
+$bp-exsmallestR: 29.3em; // 464px//
+$bp-exsmallest2R: 20.25em; // 464px//
+
+
+
+
+
+
 
 
 
@@ -27,6 +49,8 @@ $bp-small1: 36.62em; // 730px//
 $bp-small: 37.5em; // 730px//
 $bp-smallest: 33.7em; // 730px//
 $bp-exsmallest: 29.3em; // 464px//
+
+
 
 
 
@@ -56,6 +80,30 @@ font-size: 62.5%;
 @media only screen and  (max-width: $bp-mediumF) {
     font-size: 50%;
 }
+@media only screen and  (max-width: $bp-smallestR) {
+    font-size: 48%;
+}
+@media only screen and  (max-width: $bp-exsmallestR) {
+    font-size: 45%;
+}
+@media only screen and  (max-width: $bp-largestE) {
+    font-size: 55%;
+}
+
+@media only screen and  (max-width: $bp-largeE) {
+    font-size: 50%;
+}
+
+@media only screen and  (max-width: $bp-mediumE) {
+    font-size: 45%;
+}
+@media only screen and  (max-width: $bp-smallE) {
+    font-size: 40%;
+}
+@media only screen and  (max-width: $bp-smallerE) {
+    font-size: 35%;
+}
+
 
 
 
@@ -65,6 +113,7 @@ font-size: 62.5%;
 body {
     line-height: 1.6;
     font-weight: 300;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 
@@ -79,7 +128,7 @@ body {
 
 .content {
     width: 45vw;
-    height: 80rem;
+    min-height: 140rem;
 
     margin: 0 auto;
     background-color: #fff;
@@ -91,6 +140,8 @@ body {
 
     @media only screen and  (max-width: $bp-exlargest) {
         width: 55vw;
+        height: 100rem;
+
     }
     @media only screen and  (max-width: $bp-largest) {
         width: 60vw;
@@ -105,6 +156,8 @@ body {
     }
     @media only screen and  (max-width: $bp-medium) {
         width: 80vw;
+        height: 95rem;
+
     }
     @media only screen and  (max-width: $bp-small1) {
         width: 85vw;
@@ -120,6 +173,10 @@ body {
         width: 100vw;
         height: 95rem;
 
+    }
+
+    @media only screen and  (max-width: $bp-exsmallestR) {
+        min-height: 160rem;
     }
 
 
